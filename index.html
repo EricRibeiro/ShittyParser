@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+    <title>Shitty Parser</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  </head>
+  <body>
+      <div class="container">
+        <div class="row">
+            <div class="col">
+                    <div class="alert alert-danger" style='display: none'>
+                        Don't know what to do with that! It's a invalid json :(
+                    </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="shittyTextArea"><strong>Shitty Text</strong></label>
+                    <textarea class="form-control" id="shitty" rows="15"></textarea>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="readableTextArea"><strong>Readable Text </strong></label>
+                    <textarea class="form-control" id="readable" rows="15"></textarea>
+                </div>
+            </div>    
+        </div>
+      </div>
+
+      <div class="container mt-4">
+          <div class="row">
+                <div class="col text-right">
+                    <button type="button" id="unbeautify" class="btn btn-primary">Unbeautify JSON</button>
+                </div>
+                <div class="col text-left">
+                    <button type="button" id="beautify" class="btn btn-primary">Beautify JSON</button>
+                </div>
+          </div>
+      </div>
+      
+  <script src="js/index.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  </body>
+</html>
